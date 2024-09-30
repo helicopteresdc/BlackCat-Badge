@@ -1,6 +1,6 @@
 # BlackCat-Badge
 Хар муур (BlackCat) Limited 30ш Badge-н жишээ код, Arduino сангийн функцууд, hardware documentation-г орууллаа.
-<br> <img height = "500" align = "center" src="https://github.com/helicopteresdc/BlackCat-Badge/blob/main/Images/FrontSide%20BlackCat%20PCB.png"/><br>
+<br> <img height = "600" src="https://github.com/helicopteresdc/BlackCat-Badge/blob/main/Images/FrontSide%20BlackCat%20PCB.png"/><br>
 Arduino IDE дээр суулгах сангууд:
 1. Adafruit_NeoPixel - RGB LED гэрэлний сан LED гэрлийн марк WS2812
 2. U8g2 - 0,96 инчийн Oled дэлгэцний сан OLED дэлгэцний марк SSD1315
@@ -14,7 +14,7 @@ BlackCat Badge нь ESP32C3 ашигласан тул
 - POWER MANAGEMENT UNIT
 - CRYPTOGRAPHY ACCELERATION -г туршаад үзээрэй.
 
-<br> <img height = "500" align = "center" src="https://github.com/helicopteresdc/BlackCat-Badge/blob/main/Images/ESP32C3%20Architecture.png"/><br>
+<br> <img height = "600" src="https://github.com/helicopteresdc/BlackCat-Badge/blob/main/Images/ESP32C3%20Architecture.png"/><br>
 
 # So much more is coming ...
 * Special Thanks for MNCERTCC
