@@ -12,8 +12,7 @@ BlackCat Badge нь ESP32C3 ашигласан тул
 * POWER MANAGEMENT
 * CRYPTOGRAPHY ACCELERATION -г туршаад үзээрэй.
 
-* 
-hardwareCheck Code-г ажлуулаад Hardware-тэй холбоотой ямар нэгэн асуудал гарвал IT Park - 216 тоот Beelog Technologies LLC-д ирж засуулж болно.
+! hardwareCheck Code-г ажлуулаад Hardware-тэй холбоотой ямар нэгэн асуудал гарвал IT Park - 216 тоот Beelog Technologies LLC-д ирж засуулж болно.
 
 Холбоо барих:
 Website: www.beelog.tech
