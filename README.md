@@ -3,7 +3,8 @@
 <br> <img height = "600" src="https://github.com/helicopteresdc/BlackCat-Badge/blob/main/Images/FrontSide%20BlackCat%20PCB.png"/><br>
 * Arduino IDE татах - https://www.arduino.cc/en/software
 * Arduino IDE-д Espressif Board-н сан суулгах - https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions
-Arduino IDE дээр суулгах сангууд:
+
+* Arduino IDE дээр суулгах сангууд:
 1. Adafruit_NeoPixel - RGB LED гэрэлний сан LED гэрлийн марк WS2812
 2. U8g2 - 0,96 инчийн Oled дэлгэцний сан OLED дэлгэцний марк SSD1315
 
