@@ -8,14 +8,16 @@ Arduino IDE дээр суулгах сангууд:
 Зураг byte Array болгох бол https://javl.github.io/image2cpp/ -г ашиглаарай.
 
 BlackCat Badge нь ESP32C3 ашигласан тул
-* WIFI
-* OTA Update
-* BLUETOOTH
-* POWER MANAGEMENT
-* CRYPTOGRAPHY ACCELERATION -г туршаад үзээрэй.
+- WIFI
+- OTA Update
+- BLUETOOTH
+- POWER MANAGEMENT UNIT
+- CRYPTOGRAPHY ACCELERATION -г туршаад үзээрэй.
+
+<br height = "700" src="https://github.com/helicopteresdc/BlackCat-Badge/blob/main/Images/ESP32C3%20Architecture.png"><br>
 
 # So much more is coming ...
-* Special Thanks for MNSEC
+* Special Thanks for MNCERTCC
 * hardwareCheck Code-г ажлуулаад Hardware-тэй холбоотой ямар нэгэн асуудал гарвал IT Park - 216 тоот Beelog Technologies LLC-д ирж засуулж болно.
 
 Холбоо барих:
