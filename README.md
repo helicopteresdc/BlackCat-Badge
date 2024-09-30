@@ -20,6 +20,7 @@ BlackCat Badge нь ESP32C3 ашигласан тул
 * Special Thanks for MNCERTCC
 * hardwareCheck Code-г ажлуулаад Hardware-тэй холбоотой ямар нэгэн асуудал гарвал IT Park - 216 тоот Beelog Technologies LLC-д ирж засуулж болно.
 
+# Developed By Beelog Tech
 Холбоо барих:
 Website: www.beelog.tech
 Mobile: 99782920
