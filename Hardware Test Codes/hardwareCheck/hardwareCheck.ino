@@ -4,113 +4,53 @@
 #include <Wire.h>
 #include "pitches.h"
 int melody[] = {
-     NOTE_E4, NOTE_G4, NOTE_A4, NOTE_A4, 0, 
-   NOTE_A4, NOTE_B4, NOTE_C5, NOTE_C5, 0, 
-   NOTE_C5, NOTE_D5, NOTE_B4, NOTE_B4, 0,
-   NOTE_A4, NOTE_G4, NOTE_A4, 0,
-   
-   NOTE_E4, NOTE_G4, NOTE_A4, NOTE_A4, 0, 
-   NOTE_A4, NOTE_B4, NOTE_C5, NOTE_C5, 0, 
-   NOTE_C5, NOTE_D5, NOTE_B4, NOTE_B4, 0,
-   NOTE_A4, NOTE_G4, NOTE_A4, 0,
-   
-   NOTE_E4, NOTE_G4, NOTE_A4, NOTE_A4, 0, 
-   NOTE_A4, NOTE_C5, NOTE_D5, NOTE_D5, 0, 
-   NOTE_D5, NOTE_E5, NOTE_F5, NOTE_F5, 0,
-   NOTE_E5, NOTE_D5, NOTE_E5, NOTE_A4, 0,
-   
-   NOTE_A4, NOTE_B4, NOTE_C5, NOTE_C5, 0, 
-   NOTE_D5, NOTE_E5, NOTE_A4, 0, 
-   NOTE_A4, NOTE_C5, NOTE_B4, NOTE_B4, 0,
-   NOTE_C5, NOTE_A4, NOTE_B4, 0,
+  NOTE_E4, NOTE_G4, NOTE_A4, NOTE_A4, 0,
+  NOTE_A4, NOTE_B4, NOTE_C5, NOTE_C5, 0,
+  NOTE_C5, NOTE_D5, NOTE_B4, NOTE_B4, 0,
+  NOTE_A4, NOTE_G4, NOTE_A4, 0,
 
-   NOTE_A4, NOTE_A4, 
-   //Repeat of first part
-   NOTE_A4, NOTE_B4, NOTE_C5, NOTE_C5, 0, 
-   NOTE_C5, NOTE_D5, NOTE_B4, NOTE_B4, 0,
-   NOTE_A4, NOTE_G4, NOTE_A4, 0,
+  NOTE_E4, NOTE_G4, NOTE_A4, NOTE_A4, 0,
+  NOTE_A4, NOTE_B4, NOTE_C5, NOTE_C5, 0,
+  NOTE_C5, NOTE_D5, NOTE_B4, NOTE_B4, 0,
+  NOTE_A4, NOTE_G4, NOTE_A4, 0,
 
-   NOTE_E4, NOTE_G4, NOTE_A4, NOTE_A4, 0, 
-   NOTE_A4, NOTE_B4, NOTE_C5, NOTE_C5, 0, 
-   NOTE_C5, NOTE_D5, NOTE_B4, NOTE_B4, 0,
-   NOTE_A4, NOTE_G4, NOTE_A4, 0,
-   
-   NOTE_E4, NOTE_G4, NOTE_A4, NOTE_A4, 0, 
-   NOTE_A4, NOTE_C5, NOTE_D5, NOTE_D5, 0, 
-   NOTE_D5, NOTE_E5, NOTE_F5, NOTE_F5, 0,
-   NOTE_E5, NOTE_D5, NOTE_E5, NOTE_A4, 0,
-   
-   NOTE_A4, NOTE_B4, NOTE_C5, NOTE_C5, 0, 
-   NOTE_D5, NOTE_E5, NOTE_A4, 0, 
-   NOTE_A4, NOTE_C5, NOTE_B4, NOTE_B4, 0,
-   NOTE_C5, NOTE_A4, NOTE_B4, 0,
-   //End of Repeat
+  NOTE_E4, NOTE_G4, NOTE_A4, NOTE_A4, 0,
+  NOTE_A4, NOTE_C5, NOTE_D5, NOTE_D5, 0,
+  NOTE_D5, NOTE_E5, NOTE_F5, NOTE_F5, 0,
+  NOTE_E5, NOTE_D5, NOTE_E5, NOTE_A4, 0,
 
-   NOTE_E5, 0, 0, NOTE_F5, 0, 0,
-   NOTE_E5, NOTE_E5, 0, NOTE_G5, 0, NOTE_E5, NOTE_D5, 0, 0,
-   NOTE_D5, 0, 0, NOTE_C5, 0, 0,
-   NOTE_B4, NOTE_C5, 0, NOTE_B4, 0, NOTE_A4,
+  NOTE_A4, NOTE_B4, NOTE_C5, NOTE_C5, 0,
+  NOTE_D5, NOTE_E5, NOTE_A4, 0,
+  NOTE_A4, NOTE_C5, NOTE_B4, NOTE_B4, 0,
+  NOTE_C5, NOTE_A4, NOTE_B4, 0,
 
-   NOTE_E5, 0, 0, NOTE_F5, 0, 0,
-   NOTE_E5, NOTE_E5, 0, NOTE_G5, 0, NOTE_E5, NOTE_D5, 0, 0,
-   NOTE_D5, 0, 0, NOTE_C5, 0, 0,
-   NOTE_B4, NOTE_C5, 0, NOTE_B4, 0, NOTE_A4
+  NOTE_A4, NOTE_A4
 };
 
 int noteDurations[] = {
-  125, 125, 250, 125, 125, 
   125, 125, 250, 125, 125,
   125, 125, 250, 125, 125,
-  125, 125, 375, 125, 
-  
-  125, 125, 250, 125, 125, 
+  125, 125, 250, 125, 125,
+  125, 125, 375, 125,
+
   125, 125, 250, 125, 125,
   125, 125, 250, 125, 125,
-  125, 125, 375, 125, 
-  
-  125, 125, 250, 125, 125, 
+  125, 125, 250, 125, 125,
+  125, 125, 375, 125,
+
+  125, 125, 250, 125, 125,
   125, 125, 250, 125, 125,
   125, 125, 250, 125, 125,
   125, 125, 125, 250, 125,
 
-  125, 125, 250, 125, 125, 
-  250, 125, 250, 125, 
+  125, 125, 250, 125, 125,
+  250, 125, 250, 125,
   125, 125, 250, 125, 125,
   125, 125, 375, 375,
 
-  250, 125,
-  //Rpeat of First Part
-  125, 125, 250, 125, 125,
-  125, 125, 250, 125, 125,
-  125, 125, 375, 125, 
-  
-  125, 125, 250, 125, 125, 
-  125, 125, 250, 125, 125,
-  125, 125, 250, 125, 125,
-  125, 125, 375, 125, 
-  
-  125, 125, 250, 125, 125, 
-  125, 125, 250, 125, 125,
-  125, 125, 250, 125, 125,
-  125, 125, 125, 250, 125,
-
-  125, 125, 250, 125, 125, 
-  250, 125, 250, 125, 
-  125, 125, 250, 125, 125,
-  125, 125, 375, 375,
-  //End of Repeat
-  
-  250, 125, 375, 250, 125, 375,
-  125, 125, 125, 125, 125, 125, 125, 125, 375,
-  250, 125, 375, 250, 125, 375,
-  125, 125, 125, 125, 125, 500,
-
-  250, 125, 375, 250, 125, 375,
-  125, 125, 125, 125, 125, 125, 125, 125, 375,
-  250, 125, 375, 250, 125, 375,
-  125, 125, 125, 125, 125, 500
+  250, 125
 };
-const int songspeed = 1.5; 
+const int songspeed = 1.5;
 #define PIN 7
 #define NUMPIXELS 2
 
@@ -171,7 +111,7 @@ void loop() {
       u8g2.drawStr(40, 40, "2024");
       u8g2.drawStr(20, 60, "#1 Byte4Bait");
       u8g2.sendBuffer();
-      for (int thisNote = 0; thisNote < 203; thisNote++) {
+      for (int thisNote = 0; thisNote < 78; thisNote++) {
         int wait = noteDurations[thisNote] * songspeed;
         tone(1, melody[thisNote], wait);
         delay(wait);
@@ -185,23 +125,19 @@ void loop() {
       jsdownVal = digitalRead(jsdownPin);
       jsrightVal = digitalRead(jsrightPin);
       jsleftVal = digitalRead(jsleftPin);
-      jsswitchVal = digitalRead(jsswitchPin);
       u8g2.clearBuffer();
       u8g2.drawStr(20, 20, "1. JOYSTICK");
-      if (jsupVal == LOW && jsdownVal == HIGH && jsrightVal == HIGH && jsleftVal == HIGH && jsswitchVal == HIGH) {
+      if (jsupVal == LOW) {
         u8g2.drawStr(55, 50, "UP");
       }
-      if (jsupVal == HIGH && jsdownVal == LOW && jsrightVal == HIGH && jsleftVal == HIGH && jsswitchVal == HIGH) {
+      if (jsdownVal == LOW) {
         u8g2.drawStr(45, 50, "DOWN");
       }
-      if (jsupVal == HIGH && jsdownVal == HIGH && jsrightVal == LOW && jsleftVal == HIGH && jsswitchVal == HIGH) {
+      if (jsrightVal == LOW) {
         u8g2.drawStr(40, 50, "RIGHT");
       }
-      if (jsupVal == HIGH && jsdownVal == HIGH && jsrightVal == HIGH && jsleftVal == LOW && jsswitchVal == HIGH) {
+      if (jsleftVal == LOW) {
         u8g2.drawStr(45, 50, "LEFT");
-      }
-      if (jsupVal == HIGH && jsdownVal == HIGH && jsrightVal == HIGH && jsleftVal == HIGH && jsswitchVal == LOW) {
-        u8g2.drawStr(35, 50, "SWITCH");
       }
       u8g2.sendBuffer();
       if (count == 10) {
@@ -216,6 +152,7 @@ void loop() {
     case 3:
       buttonAVal = digitalRead(buttonAPin);
       buttonBVal = digitalRead(buttonBPin);
+      jsswitchVal = digitalRead(jsswitchPin);
       u8g2.clearBuffer();
       u8g2.drawStr(20, 20, "2. BUTTON");
       if (buttonAVal == LOW) {
@@ -223,6 +160,9 @@ void loop() {
       }
       if (buttonBVal == LOW) {
         u8g2.drawStr(20, 50, "BUTTON B");
+      }
+      if (jsswitchVal == LOW) {
+        u8g2.drawStr(35, 50, "SWITCH");
       }
       u8g2.sendBuffer();
       if (count == 5) {
@@ -287,7 +227,7 @@ void loop() {
       u8g2.drawStr(0, 20, "6.BUZZER");
       u8g2.drawStr(45, 50, "PLAYING");
       u8g2.sendBuffer();
-      for (int thisNote = 0; thisNote < 203; thisNote++) {
+      for (int thisNote = 0; thisNote < 78; thisNote++) {
         int wait = noteDurations[thisNote] * songspeed;
         tone(1, melody[thisNote], wait);
         delay(wait);
