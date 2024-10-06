@@ -7,12 +7,12 @@
 * Arduino IDE дээр суулгах сангууд:
 1. <a href="https://github.com/adafruit/Adafruit_NeoPixel">Adafruit_NeoPixel</a> - RGB LED гэрэлний сан LED гэрлийн марк WS2812
 2. <a href="https://github.com/olikraus/U8g2_Arduino">U8g2</a>  - 0,96 инчийн Oled дэлгэцний сан OLED дэлгэцний марк SSD1315
-
+3. <a href="https://github.com/bblanchon/ArduinoJson">ArduinoJson</a>  - Json parse болон Merge хийх сан
 Font солих бол <a href="https://github.com/olikraus/u8g2/wiki/fntlistall">U8g2 Font List</a>  
 Зураг byte Array болгох бол <a href="https://javl.github.io/image2cpp/">image2cpp</a>  -г ашиглаарай.
 
 BlackCat Badge нь ESP32C3 ашигласан тул
-- WIFI
+- WIFI 
 - OTA Update
 - BLUETOOTH
 - POWER MANAGEMENT UNIT
@@ -21,6 +21,7 @@ BlackCat Badge нь ESP32C3 ашигласан тул
 <br> <img height = "600" src="https://github.com/helicopteresdc/BlackCat-Badge/blob/main/Images/ESP32C3%20Architecture.png"/><br>
 
 # So much more is coming ...
+* UPDATE - Bitcoin Ticker код Example дотор оруулав.
 * Special Thanks for <a href="https://mncert.org/">MNCERTCC</a>
 * hardwareCheck Code-г ажлуулаад Hardware-тэй холбоотой ямар нэгэн асуудал гарвал IT Park - 216 тоот Beelog Technologies LLC-д ирж засуулж болно. Joystick-н кодыг шинээр өөр нөхцөл шалгаж оруулсан байгаа шүү Joystick чинь давхар дарагдаад байсан бол дахиад кодоо татаж аваад шараад үзээрэй.
 
