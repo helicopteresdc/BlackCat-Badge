@@ -22,7 +22,7 @@ BlackCat Badge нь ESP32C3 ашигласан тул
 
 # So much more is coming ...
 * Special Thanks for <a href="https://mncert.org/">MNCERTCC</a>
-* hardwareCheck Code-г ажлуулаад Hardware-тэй холбоотой ямар нэгэн асуудал гарвал IT Park - 216 тоот Beelog Technologies LLC-д ирж засуулж болно.
+* hardwareCheck Code-г ажлуулаад Hardware-тэй холбоотой ямар нэгэн асуудал гарвал IT Park - 216 тоот Beelog Technologies LLC-д ирж засуулж болно. Joystick-н кодыг шинээр өөр нөхцөл шалгаж оруулсан байгаа шүү Joystick чинь давхар дарагдаад байсан бол дахиад кодоо татаж аваад шараад үзээрэй.
 
 # Developed By Beelog Tech
 Холбоо барих:
